@@ -11,6 +11,7 @@
 #include "graphml.hh"
 #include "legacy.hh"
 #include "path-with-outputs.hh"
+#include "loggers.hh"
 
 #include <iostream>
 #include <algorithm>

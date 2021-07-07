@@ -3,6 +3,7 @@
 #include "shared.hh"
 #include "store-api.hh"
 #include "progress-bar.hh"
+#include "loggers.hh"
 
 using namespace nix;
 

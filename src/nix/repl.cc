@@ -33,6 +33,7 @@ extern "C" {
 #include "command.hh"
 #include "finally.hh"
 #include "markdown.hh"
+#include "loggers.hh"
 
 #if HAVE_BOEHMGC
 #define GC_INCLUDE_NEW

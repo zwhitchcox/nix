@@ -16,6 +16,7 @@
 #include "value-to-json.hh"
 #include "xml-writer.hh"
 #include "legacy.hh"
+#include "loggers.hh"
 
 #include <cerrno>
 #include <ctime>
@@ -341,9 +342,9 @@ static DrvInfos filterBySelector(EvalState & state, const DrvInfos & allElems,
 
         if (selector.hits == 0 && selector.fullName != "*") {
             const auto prefixHits = searchByPrefix(allElems, selector.name);
-            
+
             if (prefixHits.empty()) {
-                throw Error("selector '%1%' matches no derivations", selector.fullName);    
+                throw Error("selector '%1%' matches no derivations", selector.fullName);
             } else {
                 std::string suggestionMessage = ", maybe you meant:";
                 for (const auto & drvName : prefixHits) {

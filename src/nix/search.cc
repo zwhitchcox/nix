@@ -9,6 +9,7 @@
 #include "shared.hh"
 #include "eval-cache.hh"
 #include "attr-path.hh"
+#include "loggers.hh"
 
 #include <regex>
 #include <fstream>
