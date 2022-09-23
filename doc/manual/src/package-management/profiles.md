@@ -111,12 +111,12 @@ easier to switch to a different profile. You can do that using the
 command `nix-env --switch-profile`:
 
 ```console
-$ nix-env --switch-profile /nix/var/nix/profiles/my-profile
+$ nix-env --switch-profile /nix/var/nix/profiles/carol
 
 $ nix-env --switch-profile /nix/var/nix/profiles/default
 ```
 
-These commands switch to the `my-profile` and default profile,
+These commands switch to the `carol` and default profile,
 respectively. If the profile doesn’t exist, it will be created
 automatically. You should be careful about storing a profile in another
 location than the `profiles` directory, since otherwise it might not be
